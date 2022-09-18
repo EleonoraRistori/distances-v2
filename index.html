@@ -34,7 +34,27 @@
     <button type="button" id="open-sheet" aria-controls="sheet">Open Sheet</button>
 
     <!-- The sheet component -->
-    <div id="sheet" class="column items-center justify-end" aria-hidden="true">
+    <div id="sheet" class="column justify-end" aria-hidden="true">
+      <!-- Dark background for the sheet -->
+      <p class="info">
+        Clicca sui dettagli per ricevere informazioni
+      </p>
+      <div id="detailContainer">
+        <a id="detail0_0" class="details">
+          <img src="https://raw.githubusercontent.com/EleonoraRistori/camera-app/main/Icone%20Particolari/Annunciazione%20(Leonardo)/detail0_0.png" id="detail0_0img">
+          <span class="detailLabel">Zefiro, clori e Flora</span>
+        </a>
+        <a id="detail0_1" class="details">
+          <img src="https://raw.githubusercontent.com/EleonoraRistori/camera-app/main/Icone%20Particolari/Annunciazione%20(Leonardo)/detail0_0.png" id="detail0_1img">
+        </a>
+        <a id="detail1_0" class="details">
+          <img src="https://raw.githubusercontent.com/EleonoraRistori/camera-app/main/Icone%20Particolari/Annunciazione%20(Leonardo)/detail0_0.png" id="detail1_0img">
+        </a>
+        <a id="detail1_1" class="details">
+          <img src="https://raw.githubusercontent.com/EleonoraRistori/camera-app/main/Icone%20Particolari/Annunciazione%20(Leonardo)/detail0_0.png" id="detail1_1img">
+        </a>
+      </div>
+
       <!-- Dark background for the sheet -->
       <div class="overlay"></div>
 
@@ -52,10 +72,37 @@
 
         <!-- Body of the sheet -->
         <main class="body fill column">
-          <h2>Hello, World!</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit explicabo vero quas eligendi, eos cupiditate sint aliquam a omnis commodi quos in libero veniam. Quidem, non a quibusdam consequuntur mollitia officia numquam sit quos dolorum quaerat reprehenderit laboriosam perspiciatis consequatur odit error dolore recusandae iste id quam magnam ut! Sint nulla minus excepturi libero officiis, deleniti, delectus obcaecati saepe natus rerum nesciunt!</p>
-        </main>
+          <h2 id="artwork">
+              <span id="artworkTitle">Opera
+              </span>
+            -
+            <span id="author">
+                Autore
+              </span>
+          </h2>
+          <h3 id="detailName">
+            Dettaglio
+          </h3>
+          <div class="flex-container">
+            <div>
+              <img class="responsive-image" id="detailImage" src="https://raw.githubusercontent.com/EleonoraRistori/camera-app/main/Icone%20Particolari/Primavera%20(Botticelli)/seed_000.png">
 
+            </div>
+
+            <div id="information">
+              <button type="button" id="audioGuide">
+                <img class="responsive-image" src="images/icons/Audio%20Icon.png">
+                <p>Ascolta la guida</p>
+              </button>
+              <button type="button" id="restart">
+                &#8635; Restart
+              </button>
+              <p id="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
 
